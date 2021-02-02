@@ -9,7 +9,7 @@ Create methods to:
 
 1. Isolate a value with no match in an array
 2. Count and declare how many different values has an array
-3. An eucliadian classic exercise. With a basic formula, run for a range, and consume a value, in circular way, until that index be accessed again
+3. An euclidean classic exercise. With a basic formula, run for a range, and consume a value, in circular way, until that index be accessed again
 
 The proposal asked for different languages, as I observed with static type, and although I used to javascript, I am aware about declare kind of types, public and private attributes and methods, so Typescript wasn't a hard mystery. So I used typescript to code, and node to compile to js.
 
@@ -23,6 +23,6 @@ I've found two possible ways to solve this exercise. First one, I suppose that i
 
 The second test ask for to find how many unique values appears in an array. For this particular exercise I decide, firstly to get how many times a value or multiple values appears along the array length, and then to count those itens on that dictionary
 
-## **Euclidian**
+## **Euclidean**
 
 On this particular exercise, I guess, because the instructions show the formula, it was a little bit easier to solve. First of all, I create an array with an argument passed by the function, and also the interval of each chocolate must be eaten, then I mark every chocolate had been eaten, and then I count those marked indexes.
