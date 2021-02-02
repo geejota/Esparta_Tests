@@ -7,7 +7,7 @@ var Solution = /** @class */ (function () {
         (function (countables) {
         })(countables || (countables = {}));
         ;
-        for (var i = 0; i < array.length; i++) {
+        for (var i = 0; i < array.length; i++) { // agrupar os valores em um grupo
             var j = i + 1;
             var counter = 1;
             while (j != array.length) {
@@ -30,8 +30,8 @@ var Solution = /** @class */ (function () {
         }
         ;
         var distincts = 0;
-        distincts = Object.values(countables).length;
-        countables['Distincts'] = distincts;
+        distincts = Object.values(countables).length; // contar quantos grupos tem
+        countables['Distincts'] = distincts; // adicionar a saída final com os grupos e quantos grupos existem
         return countables;
     };
     return Solution;

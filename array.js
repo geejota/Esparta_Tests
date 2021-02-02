@@ -1,23 +1,23 @@
-var array_A = [8, 2, 5, 5, 9, 2, 9];
+var array_A = [9, 3, 9, 3, 9, 7, 9, 9];
 var Solution = /** @class */ (function () {
     function Solution() {
     }
     Solution.prototype.solution = function (array) {
-        for (var i = 0; i < array.length; i++) {
-            for (var j = 1; j < array.length; j++) {
+        for (var i = 0; i < array.length; i++) { // Se os números baterem, atribuir null
+            for (var j = i + 1; j < array.length; j++) {
                 if (array[i] == array[j]) {
-                    array[i] = '';
-                    array[j] = '';
+                    array[j] = null;
+                    array[i] = null;
                 }
             }
         }
-        for (var e = 0; e < array.length; e++) {
-            if (array[e] == "") {
-                array.splice(e, 1);
-                e = 0;
+        var newArray = [];
+        for (var e = 0; e < array.length; e++) { // Apagar index com null
+            if (array[e] != null) {
+                newArray.push(array[e]);
             }
         }
-        return array;
+        return newArray;
     };
     return Solution;
 }());
